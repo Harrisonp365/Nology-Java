@@ -16,7 +16,11 @@ public class Main {
 //
 //        students.AddNewCoach("sam");
 //        System.out.println(Arrays.toString(students.coaches));
-        int[] numArr = {1, 2, 3, 4, 5, 6};
+
+
+
+        int[] numArr = new int[50];
+        ArrayUtils.fillMyArr(numArr);
         int[] newArr = ArrayUtils.incriment(numArr);
         //Assign to var then use Arrays.toString to get values not reference location
         System.out.println(Arrays.toString(newArr));

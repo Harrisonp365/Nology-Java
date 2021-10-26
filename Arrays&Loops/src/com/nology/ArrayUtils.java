@@ -12,10 +12,18 @@ package com.nology;
 public class ArrayUtils {
 
     public static int[] incriment(int[] arr) {
+        int[] temp = new int[arr.length];
 
         for(int i = 0; i < arr.length; i++)
-            arr[i] += 1;
+            temp[i] = arr[i] + 1;
 
+        return temp;
+    }
+
+    public static int[] fillMyArr(int[] arr){
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = (int)Math.floor(Math.random() * 100);
+        }
         return arr;
     }
 }
