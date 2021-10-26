@@ -29,4 +29,10 @@ public class Person {
         this.pet = pet;
     }
     //Private Methods
+
+    //override methods
+    @Override
+    public String toString() {
+        return name;
+    }
 }
