@@ -18,14 +18,12 @@ public class Pet {
         System.out.println("My name is: " + name + ", and my age is: " + age);
     }
 
-    public String getOwnerName() { return owner.getName(); }
+    public Person getOwner() {
+        return owner;
+    }
 
-    public void adopt(Person newOwner) {
-        if(owner != null) {
-            owner.unadopt();
-        }
-
-        owner = newOwner;
+    public void setPerson(Person person) {
+        this.owner = person;
     }
 
     //Private Methods

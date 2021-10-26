@@ -12,7 +12,7 @@ public class Person {
     //Getters
     public String getName() { return name; }
     public int getAge() { return age; }
-    public String getPetsName() {
+    public String getPet() {
         if(pet != null) {
             return pet.getName();
         }
@@ -22,17 +22,11 @@ public class Person {
     //Public Methods
     public void DescribeYourself() {
         System.out.println("My name is: " + name + ", and my age is: " + age);
-        System.out.println("My pets name is:" + getPetsName());
+        System.out.println("My pets name is:" + getPet());
     }
 
-    public void AdoptPet(Pet pet) {
+    public void setPet(Pet pet) {
         this.pet = pet;
-        pet.adopt(this);
     }
-
-    public void unadopt() {
-        pet = null;
-    }
-
     //Private Methods
 }

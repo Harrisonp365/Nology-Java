@@ -3,6 +3,7 @@ package com.nology;
 public class Animal {
     private String name = "Cat";
     private String sound = "meow";
+    public static String type = "animal";
 
     //Constructors
     public Animal() {}
@@ -11,4 +12,5 @@ public class Animal {
     public String getSound() {
         return sound;
     }
+
 }
