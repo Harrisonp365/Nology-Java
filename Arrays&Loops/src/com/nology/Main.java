@@ -18,6 +18,9 @@ public class Main {
 //        System.out.println(Arrays.toString(students.coaches));
         int[] numArr = {1, 2, 3, 4, 5, 6};
         int[] newArr = ArrayUtils.incriment(numArr);
+        //Assign to var then use Arrays.toString to get values not reference location
         System.out.println(Arrays.toString(newArr));
+        //This gives you memory location rather than actually values from the array
+        System.out.println(newArr);
     }
 }
