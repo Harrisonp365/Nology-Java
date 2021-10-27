@@ -26,4 +26,22 @@ public class ArrayUtils {
         }
         return arr;
     }
+
+    public static int[] reverseArr(int[] arr){
+        int[] temp = new int[arr.length];
+
+        for(int i = 0; i < arr.length; i++){
+            temp[i] = arr[arr.length - i - 1];
+        }
+
+        //This also works and the system out will work print the correct way
+//        for(int i = arr.length - 1; i <= 0; i--){
+//            //System.out.println(arr[i]);
+//            temp[i] = arr[arr.length - i - 1];
+//        }
+
+        return temp;
+
+        //or use arrayList.reverse
+    }
 }
