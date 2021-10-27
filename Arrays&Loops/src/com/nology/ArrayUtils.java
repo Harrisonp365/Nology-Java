@@ -39,7 +39,17 @@ public class ArrayUtils {
 //            //System.out.println(arr[i]);
 //            temp[i] = arr[arr.length - i - 1];
 //        }
-
+// Calums way of reversing arr---------------------------------------------------------
+//        int head = 0;
+//        int tail = arr.length - 1;
+//
+//        while(head < tail) {
+//            int tmp = arr[head];
+//            arr[head++] = arr[tail];
+//            arr[tail--] = tmp;
+//        }
+//        return arr;
+//--------------------------------------------------------------------------------------
         return temp;
 
         //or use arrayList.reverse
