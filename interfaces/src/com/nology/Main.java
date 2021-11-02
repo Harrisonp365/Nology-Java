@@ -13,22 +13,32 @@ public class Main {
 //	Dog newDog = new Dog(15);
 //	newDog.makeSounds();
 
-		Bike bike1 = new Bike(100);
+//		Bike bike1 = new Bike(100);
+//		bike1.getSpeed();
+//        bike1.getBikeSpeed();
+//		bike1.setSpeed(110);
+//        bike1.getSpeed();
+//        bike1.getBikeSpeed();
+//        bike1.decreaseSpeed(10);
+//
+//        Car car1 = new Car(100);
+//        car1.getSpeed();
+//        car1.getCarSpeed();
+//        car1.setCarSpeed(110);
+//        car1.getSpeed();
+//        car1.getCarSpeed();
+//        car1.decreaseSpeed(10);
 
-		bike1.getSpeed();
-        bike1.getBikeSpeed();
-		bike1.setSpeed(110);
-        bike1.getSpeed();
-        bike1.getBikeSpeed();
-        bike1.decreaseSpeed(10);
+        Triangle newTri = new Triangle(10, 15);
+        System.out.println(newTri.getPerimeter());
+        System.out.println(newTri.getArea());
 
-        Car car1 = new Car(100);
+        Circle newCircle = new Circle(5);
+        System.out.println(newCircle.getPerimeter());
+        System.out.println(newCircle.getArea());
 
-        car1.getSpeed();
-        car1.getCarSpeed();
-        car1.setCarSpeed(110);
-        car1.getSpeed();
-        car1.getCarSpeed();
-        car1.decreaseSpeed(10);
+        Rhombus newRom = new Rhombus(5);
+        System.out.println(newRom.getPerimeter());
+        System.out.println(newRom.getArea());
     }
 }

@@ -3,31 +3,32 @@ package com.nology;
 public class Bike implements Vehicle {
     private double speedMPH;
     private double speedKMH;
+    private double conversionRate = 1.60;
 
     public Bike(double speed) {
         this.speedMPH = speed;
     }
 
-    private void convertSpeed() {
-        this.speedKMH = this.speedMPH * 1.60;
+    private void convertBikeSpeed() {
+        this.speedKMH = this.speedMPH * conversionRate;
     }
 
     @Override
     public void getSpeed() {
-        convertSpeed();
+        convertBikeSpeed();
         System.out.println(this.speedKMH + " km/h");
     }
     @Override
     public double decreaseSpeed(double n) {
         this.speedMPH = this.speedMPH - n;
-        convertSpeed();
+        convertBikeSpeed();
         System.out.println(speedKMH + " km/h");
         return speedKMH;
     }
 
     public void setSpeed(double speed) {
         this.speedMPH = speed;
-        convertSpeed();
+        convertBikeSpeed();
     }
 
     public double getBikeSpeed() {
