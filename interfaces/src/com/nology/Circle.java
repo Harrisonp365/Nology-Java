@@ -1,6 +1,6 @@
 package com.nology;
 
-public class Circle {
+public class Circle implements Area, Perimeter{
     double radius;
 
     public Circle(double radius) {
@@ -15,7 +15,7 @@ public class Circle {
 
     public double getArea() {
         double rtnArea;
-        rtnArea = Math.PI * radius * radius;
+        rtnArea = Math.PI * Math.pow(this.radius, 2);
         return rtnArea;
     }
 
