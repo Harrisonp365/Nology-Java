@@ -7,6 +7,18 @@ public class Main {
     //What is a function signature?
     //What does the abstract keyword do?
     public static void main(String[] args) {
-	// write your code here
+//	AbstractChild childClass = new AbstractChild();
+//	childClass.setProperty(30);
+//	childClass.undefinedMethod();
+
+	RowBoat rowBoat = new RowBoat();
+	rowBoat.setVessel("RowBoat");
+	rowBoat.setBouyancy(100);
+	rowBoat.fireWeapons();
+	rowBoat.doesItFloat(50);
+
+	PirateShip pirate = new PirateShip();
+	pirate.fireWeapons();
+	pirate.doesItFloat(5000);
     }
 }
