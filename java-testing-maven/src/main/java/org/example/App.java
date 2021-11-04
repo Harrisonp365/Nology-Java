@@ -1,11 +1,6 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
+public class App {
     public static void main( String[] args ) {
         RegularTriangle tri = new RegularTriangle(123.);
         System.out.printf("Side length %f%n", tri.getSide());
@@ -19,6 +14,6 @@ public class App
             System.out.printf("get Perim has failed%n");
             System.out.printf("The error: %s%n", error.toString());
         }
-
+        //exceptions always must be handled but errors do not have to be
     }
 }
