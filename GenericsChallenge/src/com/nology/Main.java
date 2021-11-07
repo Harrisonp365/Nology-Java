@@ -10,10 +10,11 @@ public class Main {
 	AMDCard amd6900 = new AMDCard(1799);
 
 	Catalogue<Product> catalogue = new Catalogue<>();
+	catalogue.add(new Nvidia(2000)); // add new item inline
 	catalogue.add(rtx3090);
 	catalogue.add(amd6800);
 	catalogue.add(amd6900);
 
-	System.out.println(catalogue.calculateTotal());
+	System.out.println("Total price of products $" + catalogue.calculateTotal());
     }
 }
