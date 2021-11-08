@@ -4,9 +4,11 @@ import io.nology.iceland.payloads.books.BookCreate;
 import io.nology.iceland.payloads.books.BookUpdate;
 import io.nology.iceland.repo.BookRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -24,7 +26,9 @@ public class BookService {
         return this.repo.findAll();
     }
 
-
+    public Optional<Book> find(Long id){
+        return this.repo.findById(id);
+    }
 //    public void update here
 
     public void delete(Long id) {this.repo.deleteById(id);}
