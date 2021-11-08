@@ -6,6 +6,7 @@ import io.nology.iceland.repo.BookRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 @Transactional
@@ -16,8 +17,13 @@ public class BookService {
 
     public void create(BookCreate book){
         Book dbBook = new Book(book.getPages(), book.getIsHardCover(), book.getAuthor());
-        repo.save(dbBook);
+        this.repo.save(dbBook);
     }
+
+    public List<Book> all() {
+        return this.repo.findAll();
+    }
+
 
 //    public void update here
 

@@ -7,6 +7,7 @@ import io.nology.iceland.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
+import java.util.List;
 
 
 @RestController
@@ -43,6 +44,11 @@ public class BookController {
 //    public Book update(@PathVariable Long id, @Valid @RequestBody BookUpdate bookUpdate) {
 //        return this.bookService.create(bookUpdate);
 //    }
+
+    @GetMapping
+    public List<Book> all() {
+        return this.bookService.all();
+    }
 
     @DeleteMapping(value="/{id}")
     public void delete(@PathVariable Long id) {
